@@ -47,5 +47,5 @@ def solve():
     print(np.matrix(grid))
     input("More?")
 solve()
-print("Done")
+print("Done with the puzzle")
 
