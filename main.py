@@ -1,3 +1,8 @@
+"""
+The work of Professor Thorsten Altenkirch recursive Sudoku solver, from the 
+Computer Science Dept. at the University of Nottingham
+"""
+
 import numpy as np
 
 grid = [[5,3,0,0,7,0,0,0,0],
@@ -10,11 +15,11 @@ grid = [[5,3,0,0,7,0,0,0,0],
         [0,0,0,4,1,9,0,0,5],
         [0,0,0,0,8,0,0,7,9]]
 
-c = 0
+c: int = 0
 
 def possible (y,x,n):
     """Function checking x and y on grid."""
-    # global grid
+    global grid
     for i in range(0,9):
         if grid[y][i] == n:
             return False
@@ -31,6 +36,7 @@ def possible (y,x,n):
     return True
 
 def solve():
+    """Function inserts possibles into matrix"""
     global grid
     global c
     for y in range(9):
