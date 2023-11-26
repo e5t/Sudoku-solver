@@ -65,7 +65,7 @@ def solve():
                         print(np.matrix(grid),'\n')
                         grid[y][x] = 0
                 return
-    print(np.matrix(grid)," solution"'\n\n\n\n\n\n',)
+    print(np.matrix(grid)," solution\n\n\n\n\n\n",)
     input("More?")
 
 # print(np.matrix(grid))
